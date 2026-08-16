@@ -52,7 +52,7 @@ limitations under the License.
 #include "soc/lldesc.h"
 #include "esp_lcd_touch_gt911.h"
 #include "esp_lcd_touch_cst816s.h"
-#include "esp_lcd_gc9107.h"
+#include "esp_lcd_st7735.h"
 #include "esp_lcd_sh8601.h"
 #include "esp_intr_alloc.h"
 #include "main.h"
@@ -209,7 +209,7 @@ void platform_init(i2c_master_bus_handle_t bus_handle, SemaphoreHandle_t I2CMute
         .color_space = ATOM3SR_LCD_COLOR_SPACE,
         .bits_per_pixel = ATOM3SR_LCD_BITS_PER_PIXEL,
     };
-    esp_lcd_new_panel_gc9107(lcd_io, &panel_config, &lcd_panel);
+    esp_lcd_new_panel_st7735(lcd_io, &panel_config, &lcd_panel);
 
     esp_lcd_panel_reset(lcd_panel);
     esp_lcd_panel_init(lcd_panel);
