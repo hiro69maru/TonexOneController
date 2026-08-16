@@ -73,7 +73,7 @@ static const char *TAG = "platform M5Stack Atom S3R";
 
 /* LCD settings */
 #define ATOM3SR_LCD_SPI_NUM             (SPI3_HOST)
-#define ATOM3SR_LCD_PIXEL_CLK_HZ        (40 * 1000 * 1000)
+#define ATOM3SR_LCD_PIXEL_CLK_HZ        (20 * 1000 * 1000)
 #define ATOM3SR_LCD_CMD_BITS            (8)
 #define ATOM3SR_LCD_PARAM_BITS          (8)
 #define ATOM3SR_LCD_COLOR_SPACE         (ESP_LCD_COLOR_SPACE_BGR)
